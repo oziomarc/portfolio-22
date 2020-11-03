@@ -18,12 +18,12 @@ img {
   border-radius: 50%;
 }
 
-/*centering image*/
+/*avatar*/
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 12%;
+  width: 10%;
 }
 
 p {
@@ -59,7 +59,7 @@ ul {
   margin: 20px 100px 12px 100px;
   padding: 20;
   overflow: hidden;
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   font-size: 20px;
