@@ -83,10 +83,10 @@ li a:hover {
 }
 hr {
    border-width: 0.2px;
-   height: 0.05px;
+   height: 0.02px;
 }
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: #ECE7E6;
   border: none;
   color: white;
   padding: 15px 32px;
