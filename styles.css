@@ -83,10 +83,12 @@ li a {
 li a:hover {
   color: #ECE7E6;
 }
+
+/* lines */
 hr {
    border-width: 0.2px;
    height: 0.02px;
-   width: 80%;
+   width: 50%;
 }
 .button {
   background-color: #ECE7E6;
