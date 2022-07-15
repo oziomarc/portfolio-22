@@ -210,3 +210,42 @@ hr {
 #resume-link a {
   color: #064800;
 }
+
+/* SCREEN.HTML */
+.screen-flex {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+}
+#screen-content {
+  width: 70vw;
+  margin-right: 3vw;
+}
+#screen-content h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: .1rem;
+}
+#screen-content p {
+  line-height: 1.6rem;
+  font-size: 1.2rem;
+  font-kerning: 10%;
+}
+#screen-img-content {
+  display: flex;
+  /* padding: 5vmin; */
+  gap: 4vmin;
+
+  margin-right: 0;
+}
+.screen-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #ffffff;
+  padding-top: 0.025vw;
+  padding-bottom: 0.025vw;
+}
