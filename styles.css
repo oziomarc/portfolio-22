@@ -203,8 +203,10 @@ hr {
   width: 71%;
   border: 0.2px solid rgba(6,72,0,0.3);
 }
-
 #bg-img {
   width: 50%;
   position: fixed;
+}
+#resume-link a {
+  color: #064800;
 }
