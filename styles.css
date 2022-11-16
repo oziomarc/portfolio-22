@@ -2,14 +2,16 @@ html, body {
   margin: 0;
   width: 100%;
   height: 100%;
-  font-family: system-ui;
+  font-family: "system-ui";
   color: #000000;
 }
-body  {
+
+body {
   background-image: url("images/nursery.png");
   background-repeat: no-repeat;
-  background-size: 100% 400%;
+  background-size: 100% 500%;
 }
+
 .links-bar {
   bottom: 0px;
   position: fixed;
@@ -18,22 +20,30 @@ body  {
   margin: 0;
   padding-left: 1vw;
 }
+
 .links-bar img {
-  padding-top: 0.5vw;
-  padding-bottom: 0.5vw;
-  width: 2.5vmin;
+  padding-bottom: 0.8vw;
+  width: 20px;
 }
+
 .nav {
   display: flex;
   align-content: flex-start;
 }
+
 #navs {
   margin-right: 5rem;
 }
+
 .name {
+  display: flex;
   align-self: flex-end;
+  flex-direction: row;
   font-size: 1.8rem;
+  position: fixed;
+  right: 0;
 }
+
 ul {
   list-style-type: none;
   overflow: hidden;
@@ -43,29 +53,55 @@ ul {
   width: 100%;
   font-size: 1.2rem;
 }
+
 .landing-text {
   /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
+  align-self: center;
   justify-content: space-between;
-  padding: 25vh;
+  margin: 20vh;
   padding-bottom: 45vh;
 }
+
 .landing-text h2 {
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 500;
   margin-bottom: 0;
+  padding-top: 3vh;
+  padding-bottom: 5vh;
 }
+
 .landing-text h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 200;
+  margin: 0;
+  padding: 0;
 }
+
 .landing-text img {
-  margin-left: 50vw;
-  position: fixed;
-  opacity: 50%;
+  margin-top: 22vh;
+  position: absolute;
+  width: 3%;
 }
+
+#arrow {
+  display: flex;
+  align-self: center;
+}
+
+.category-title-div {
+  border: 1.5px solid black;
+  text-align: center;
+  letter-spacing: 5px;
+  width: 100%;
+  font-size: 3vmin;
+  margin: 0;
+  margin-bottom: 5vmin;
+  padding: 0;
+}
+
 .carousel {
   /* border: 2px solid red; */
   max-width: 40vw;
@@ -76,10 +112,12 @@ ul {
   margin-bottom: 6vh;
   box-sizing: border-box;
 }
+
 /* Hide the images by default */
 .slide1, .slide2, .slide3 {
   display: none;
 }
+
 /* Position next and prev buttons */
 .prev, .next {
   cursor: pointer;
@@ -95,15 +133,18 @@ ul {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+
 /* next button */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+
 /* On hover, add a green background */
 .prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 .text {
   font-size: 1rem;
   padding: 8px 12px;
@@ -113,9 +154,11 @@ ul {
   text-align: center;
   font-style: italic;
 }
+
 li {
   float: left;
 }
+
 li a {
   display: inline;
   color: #000000;
@@ -125,9 +168,11 @@ li a {
 a:hover {
   color: #d2ccc5;
 }
+
 li a:hover {
   color: #d2ccc5;
 }
+
 .button {
   background-color: #ECE7E6;
   border: none;
@@ -139,9 +184,10 @@ li a:hover {
   font-family: system-ui;
   font-size: 16px;
 }
- a div {
+
+a div {
   margin-left: 100px;
- }
+}
 /* #email {
   on:hover display address
 } */
@@ -151,34 +197,42 @@ li a:hover {
   align-items: center;
   justify-content: space-between;
 }
+
 #abt-title {
   align-self: flex-start;
   margin-left: 15vw;
 }
+
 #bio {
   display: flex;
   flex-direction: row;
 }
+
 #bio-text {
   width: 70%;
   display: flex;
   flex-direction: row;
   margin-left: 15vw;
 }
+
 .footer {
 
 }
 #foot {
 }
+
 a {
   text-decoration: none;
 }
+
 a:visited {
   color: #000000;
 }
+
 #bio-text p {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
+
 .carousel h3 {
   font-size: 2rem;
   font-weight: 300;
@@ -187,14 +241,11 @@ a:visited {
   width: 50%; /* you can use % */
   height: auto;
 }
-#about h3 {
-  font-size: 2rem;
-  font-weight: 500;
-  font-style: italic;
-}
+
 #bio-text a {
   font-size: 1.5rem;
 }
+
 #resume-link {
   display: flex;
   flex-direction: column;
