@@ -5,11 +5,15 @@ html, body {
   font-family: "system-ui";
   color: #000000;
 }
-
+/* (change main font on website) */
 body {
   background-image: url("images/nursery.png");
   background-repeat: no-repeat;
   background-size: 100% 500%;
+}
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2vh;
 }
 
 .links-bar {
@@ -86,40 +90,70 @@ ul {
   width: 3%;
 }
 
+#main1 {
+  font-family: "Baskerville", serif;
+}
+
 #arrow {
   display: flex;
   align-self: center;
 }
 
-.category-title-div {
-  border: 1.5px solid black;
+.category-title-div h3 {
+  font-size: 3vmin;
+  font-family: "Baskerville", serif;
+  font-weight: 100;
   text-align: center;
   letter-spacing: 5px;
+}
+
+.category-title-div {
+  border: 1.5px solid black;
   width: 100%;
-  font-size: 3vmin;
   margin: 0;
   margin-bottom: 5vmin;
   padding: 0;
 }
 
-.carousel {
-  /* border: 2px solid red; */
-  max-width: 40vw;
-  max-height: 80vw;
-  position: relative;
-  margin: auto;
-  padding-bottom: 4vh;
-  margin-bottom: 6vh;
-  box-sizing: border-box;
+.work-grid {
+  align-items: center;
+  --w:400px;
+  --n:2;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(clamp(100%/(var(--n) + 1) + 0.1%,var(--w),100%),1fr)); /*this */
+  gap:10px;
+  margin-left: 3vw;
+}
+
+.work-grid-item {
+  flex-direction: column;
+  margin: 30px;
+  max-width: 25vw;
+}
+
+.work-grid-item h5 {
+  visibility: hidden;
+}
+
+.work-grid-item p {
+  visibility: hidden;
+}
+
+.work-grid-item:hover h5 {
+  visibility: visible;
+}
+
+.work-grid-item:hover p {
+  visibility: visible;
 }
 
 /* Hide the images by default */
-.slide1, .slide2, .slide3 {
+/* .slide1, .slide2, .slide3 {
   display: none;
-}
+} */
 
 /* Position next and prev buttons */
-.prev, .next {
+/* .prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -132,18 +166,18 @@ ul {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-}
+} */
 
 /* next button */
-.next {
+/* .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-}
+} */
 
 /* On hover, add a green background */
-.prev:hover, .next:hover {
+/* .prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.5);
-}
+} */
 
 .text {
   font-size: 1rem;
@@ -154,17 +188,14 @@ ul {
   text-align: center;
   font-style: italic;
 }
-
 li {
   float: left;
 }
-
 li a {
   display: inline;
   color: #000000;
   text-decoration: none;
 }
-/* Change the link color on hover */
 a:hover {
   color: #d2ccc5;
 }
@@ -172,7 +203,6 @@ a:hover {
 li a:hover {
   color: #d2ccc5;
 }
-
 .button {
   background-color: #ECE7E6;
   border: none;
@@ -212,12 +242,19 @@ a div {
   width: 70%;
   display: flex;
   flex-direction: row;
-  margin-left: 15vw;
+  margin-left: 12vw;
+}
+
+#bio-text p {
+  margin-right: 8vw;
+  font-weight: 200;
+  font-size: 2vmin;
 }
 
 .footer {
 
 }
+
 #foot {
 }
 
@@ -229,21 +266,19 @@ a:visited {
   color: #000000;
 }
 
-#bio-text p {
-  font-size: 1.5rem;
-}
 
 .carousel h3 {
   font-size: 2rem;
   font-weight: 300;
 }
+
 .carousel img.resize {
-  width: 50%; /* you can use % */
+  width: 40%; /* you can use % */
   height: auto;
 }
 
 #bio-text a {
-  font-size: 1.5rem;
+  font-size: 2vmin;
 }
 
 #resume-link {
@@ -252,9 +287,11 @@ a:visited {
   align-items: center;
   margin-bottom: 5vh;
 }
+
 #resume-link #avi {
   margin-bottom: 2vh;
 }
+
 hr {
   width: 71%;
   border: 0.2px solid rgba(6,72,0,0.3);
@@ -263,8 +300,22 @@ hr {
   width: 50%;
   position: fixed;
 }
-#resume-link a {
-  color: #000000;
+.press {
+  margin: 0;
+  margin-top: 5vh;
+  padding: 0;
+  font-weight: 200;
+}
+
+.press h2 {
+  font-size: 2.2vmin;
+  font-weight: 300;
+}
+
+.press ul {
+  font-size: 2vmin;
+  padding: 0;
+  margin: 0;
 }
 
 /* SCREEN.HTML */
