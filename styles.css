@@ -9,7 +9,7 @@ html, body {
 body {
   background-image: url("images/nursery.png");
   background-repeat: no-repeat;
-  background-size: 100% 500%;
+  background-size: 100% 600%;
 }
 p {
   font-family: 'Poppins', sans-serif;
@@ -117,26 +117,52 @@ ul {
 
 .work-grid {
   align-items: center;
-  --w:400px;
-  --n:2;
-  display:grid;
+  --w: 10px;
+  --n: 2;
+  display: grid;
   grid-template-columns:repeat(auto-fit,minmax(clamp(100%/(var(--n) + 1) + 0.1%,var(--w),100%),1fr)); /*this */
-  gap:10px;
-  margin-left: 3vw;
+  margin-left: 8vw;
 }
 
 .work-grid-item {
   flex-direction: column;
   margin: 30px;
   max-width: 25vw;
+  height: auto;
 }
 
 .work-grid-item h5 {
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: -1px;
   visibility: hidden;
+  margin: 0;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  padding: 0;
 }
 
 .work-grid-item p {
+  font-size: 16px;
+  font-weight: 50;
+  margin: 0;
+  padding: 0;
   visibility: hidden;
+}
+
+.work-grid-item img {
+  border-radius: 10px;
+  margin: 0;
+  object-fit: cover;
+  padding: 0;
+}
+
+.work-grid-item iframe {
+  border-radius: 10px;
+  border: none;
+  margin: 0;
+  object-fit: cover;
+  padding: 0;
 }
 
 .work-grid-item:hover h5 {
@@ -147,37 +173,9 @@ ul {
   visibility: visible;
 }
 
-/* Hide the images by default */
-/* .slide1, .slide2, .slide3 {
-  display: none;
-} */
-
-/* Position next and prev buttons */
-/* .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: #064800;
-  font-weight: bold;
-  font-size: 2rem;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-} */
-
-/* next button */
-/* .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-} */
-
-/* On hover, add a green background */
-/* .prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-} */
+#programming {
+  margin-bottom: 5vh;
+}
 
 .text {
   font-size: 1rem;
