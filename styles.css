@@ -451,16 +451,20 @@ hr {
 }
 .entries {
   display: flex;
+  flex-direction: column;
   padding: 20px;
 }
 .entry {
   border: 1px solid black;
   border-radius: 20px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 50px;
   padding: 20px;
   padding-left: 40px;
   padding-right: 40px;
+}
+.entry img {
+  height: auto;
+  width: 350px;
 }
 .entry-title h3 {
   font-family: 'Poppins', sans-serif;
@@ -482,4 +486,14 @@ hr {
 }
 .flex-body-title {
   text-align: center;
+}
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 10px;
+}
+.img-grid-item {
+  display: flex;
+  flex-direction: column;
 }
