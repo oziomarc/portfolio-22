@@ -449,6 +449,8 @@ hr {
   margin: 8vh 10vw 0 10vw;
   height: 60vh;
 }
+
+/* SENIOR PROJECT */
 .entries {
   display: flex;
   flex-direction: column;
@@ -463,8 +465,8 @@ hr {
   padding-right: 40px;
 }
 .entry img {
-  height: auto;
-  width: 350px;
+  height: 350px;
+  width: auto;
 }
 .entry-title h3 {
   font-family: 'Poppins', sans-serif;
@@ -490,10 +492,14 @@ hr {
 .img-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(8, 5vw);
+  grid-template-rows: repeat(8, 3vw);
   grid-gap: 10px;
 }
 .img-grid-item {
   display: flex;
   flex-direction: column;
+}
+.entry-body {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
