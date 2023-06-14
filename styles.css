@@ -101,6 +101,10 @@ ul {
   align-self: center;
 }
 
+#arrow img {
+  width: 20px;
+}
+
 .category-title-div h3 {
   font-size: 3vmin;
   font-family: "Baskerville", serif;
