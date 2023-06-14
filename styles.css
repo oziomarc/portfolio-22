@@ -192,14 +192,21 @@ ul {
   text-align: center;
   font-style: italic;
 }
+
 li {
   float: left;
+  list-style-type: none;
 }
 li a {
   display: inline;
   color: #000000;
   text-decoration: none;
 }
+
+a {
+  color: #000000;
+}
+
 a:hover {
   color: #d2ccc5;
 }
@@ -207,6 +214,7 @@ a:hover {
 li a:hover {
   color: #d2ccc5;
 }
+
 .button {
   background-color: #ECE7E6;
   border: none;
@@ -266,9 +274,9 @@ a {
   text-decoration: none;
 }
 
-a:visited {
+/* a:visited {
   color: #000000;
-}
+} */
 .carousel h3 {
   font-size: 2rem;
   font-weight: 300;
@@ -305,6 +313,8 @@ hr {
 .press {
   display: flex;
   flex-direction: column;
+  font-weight: 200;
+  font-size: 2vmin;
   margin: 0;
   margin-top: 5vh;
   padding: 0;
@@ -317,8 +327,8 @@ hr {
   margin: 5px;
 }
 .press h2 {
-  font-size: 2.2vmin;
-  font-weight: 300;
+  font-size: 3vmin;
+  font-weight: 400;
 }
 .press li {
   margin-bottom: 30px;
