@@ -262,6 +262,10 @@ a div {
   font-size: 2vmin;
 }
 
+#bio-text a:hover {
+  font-style:italic;
+}
+
 .footer {
 
 }
