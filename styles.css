@@ -156,18 +156,24 @@ ul {
 }
 
 .work-grid-item img {
-  border-radius: 10px;
   margin: 0;
   object-fit: cover;
   padding: 0;
 }
 
+.work-grid-item img:hover {
+  box-shadow: 0 0 9px rgb(255, 129, 205);
+}
+
 .work-grid-item iframe {
-  border-radius: 10px;
   border: none;
   margin: 0;
   object-fit: cover;
   padding: 0;
+}
+
+.work-grid-item iframe:hover {
+  box-shadow: 0 0 9px rgb(255, 129, 205);
 }
 
 .work-grid-item:hover h5 {
@@ -207,11 +213,11 @@ a {
 }
 
 a:hover {
-  color: #d2ccc5;
+  text-shadow: 0 0 4px rgb(255, 129, 205);;
 }
 
 li a:hover {
-  color: #d2ccc5;
+  /* color: #d2ccc5; */
 }
 
 .button {
@@ -229,9 +235,7 @@ li a:hover {
 a div {
   margin-left: 100px;
 }
-/* #email {
-  on:hover display address
-} */
+
 #about {
   display: flex;
   flex-direction: column;
@@ -264,7 +268,8 @@ a div {
 }
 
 #bio-text a:hover {
-  font-style:italic;
+  font-style: italic;
+  text-shadow: 0 0 4px rgb(255, 129, 205);
 }
 
 .footer {
